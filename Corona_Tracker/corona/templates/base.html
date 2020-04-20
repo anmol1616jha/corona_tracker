@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="{% static 'icon.svg' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Corona Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .logo {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #base-logo
+        {
+            width: 150px;
+            height: 100px;
+            margin-top: 3vh;
+        }
+        .logoTxt {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+             margin-top: 3vh;
+            padding: 0.3em 1em;
+            background-color: black;
+            border-radius: 5px;
+        }
+        header{
+            background-color:  rgb(211,211,211);
+        }
+        
+        footer
+        {
+            background-color: rgb(211,211,211);
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container logo" >   
+            <img id="base-logo" src="{% static 'virus.svg' %}" >
+            <h1 class="logoTxt">CoronaTracker</h1>
+        </div>
+    
+    </header>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top Pa">
+       <button type="button" class="navbar-toggler" data-target="#menu-button" data-toggle="collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="menu-button">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link na" href="{% url 'home' %}">Home</a></li>
+          <li class="nav-item"><a class="nav-link na" href= "{% url 'home' %}" >Symptoms</a></li>
+          <li class="nav-item"><a class="nav-link na" href="{% url 'home' %}">Prevention</a></li>
+          <li class="nav-item"><a class="nav-link na" href="{% url 'home' %}">Contact</a></li> 
+        </ul>
+        </div>
+      </nav> 
+
+
+    {% block content %}
+
+    {% endblock content %}
+    <br><br>
+    <footer>
+    <h6 align="center"> Copyright @anmol1616jha </h6>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</html>
