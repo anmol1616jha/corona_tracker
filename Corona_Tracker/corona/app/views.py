@@ -67,3 +67,9 @@ def countryInfo(request):
 
 def symptoms(request):
     return render(request, 'app/symptoms.html')
+
+def prevention(request):
+    return render(request, 'app/prevention.html')
+
+def news(request):
+    return render(request, 'app/news.html')

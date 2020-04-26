@@ -43,6 +43,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 100%;
         }
 
 
@@ -64,9 +65,9 @@
         <div class="navbar-collapse collapse" id="menu-button">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link na" href="{% url 'home' %}">Home</a></li>
-          <li class="nav-item"><a class="nav-link na" href= "{% url 'home' %}" >Symptoms</a></li>
-          <li class="nav-item"><a class="nav-link na" href="{% url 'home' %}">Prevention</a></li>
-          <li class="nav-item"><a class="nav-link na" href="{% url 'home' %}">Contact</a></li> 
+          <li class="nav-item"><a class="nav-link na" href= "{% url 'symptoms' %}" >Symptoms</a></li>
+          <li class="nav-item"><a class="nav-link na" href="{% url 'prevention' %}">Precaution</a></li>
+           
         </ul>
         </div>
       </nav> 

@@ -1,7 +1,71 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<iframe width="420" height="345" src="https://www.youtube.com/watch?v=mOV1aBVYKGA&list=PL9S6xGsoqIBU2V6AZYGlJwZRAFJ3YDreb">
-</iframe>
+<div class="container">
+    <h1 class="text-center">Symptoms</h1><br>
+    <br><br><br><br>
+        <h4 class="text-center">Commom Symptoms</h4>
+        <ul><br>
+            <li>Fever</li>
+            <li>Tiredness</li>
+            <li>Dry Cough</li><br>
+        </ul>
+        <br><br>
+        <h4 class="text-center">Some people may experience:</h4>
+        <ul><br>
+            <li>aches and pains</li>
+            <li>nasal congestion</li>
+            <li>Dry Cough</li>
+            <li>diarrhoea</li>
+            <li>sore throat</li>
+            <br>
+        </ul>
+
+        <br><br>
+
+        <div class="col-sm-12">
+            <h2 class="text-center">
+                <a href= "https://www.who.int/health-topics/coronavirus#tab=tab_3">As per <b>WHO</b></a>
+            </h2>
+            <p>
+                The most common symptoms of COVID-19 are fever, tiredness, and dry cough. 
+                Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. 
+                These symptoms are usually mild and begin gradually. 
+                Some people become infected but don’t develop any symptoms and don't feel unwell. 
+                Most people (about 80%) recover from the disease without needing special treatment. 
+                Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops 
+                difficulty breathing. 
+                Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, 
+                are more likely to develop serious illness. 
+                People with fever, cough and difficulty breathing should seek medical attention.
+            </p>
+            <br><br><br>
+        </div>
+        
+        <div class="col-sm-12">
+                        
+            <p><iframe width="100%" height="500px" 
+            src="https://www.youtube.com/embed/videoseries?list=PL9S6xGsoqIBU2V6AZYGlJwZRAFJ3YDreb" 
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe></p>
+
+</div>
+
+<style>
+    .container ul>li{
+    font-size:20px;
+}
+.container p{
+    font-family: sans-serif;
+    font-size:20px;
+    padding:30px;
+    text-align:justify;
+}
+.container ul, .container p{
+    background-color: lightgray ;
+    box-shadow: 35px 35px grey;
+    border-radius:5px;
+}
+</style>
 
 {% endblock content %}

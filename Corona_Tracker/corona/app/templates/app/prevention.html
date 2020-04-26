@@ -1,0 +1,93 @@
+
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<center>
+      <br><br>
+      <img src="{% static 'five.gif' %}" alt="five">
+
+      <h1>We can stay safe just by following <b>FIVE</b> simple steps</h1>
+      <br><br>
+      <ol>
+    <div class="card" >
+      <h3><b><li>STAY</b><br>home</h3></li>
+    </div>
+    
+    <div class="card" >
+      <h3><b><li>KEEP</b><br>a<br>safe<br>distance</h3></li>
+    </div>
+      
+    <div class="card" >
+      <h3><b><li>WASH</b><br>hands<br>often</h3></li>
+    </div>
+         
+    <div class="card" >
+      <h3><b><li>COVER</b><br>your<br>cough</h3> </li>      
+    </div>
+
+     
+    <div class="card" >
+      <h3><b><li>SICK?</b><br>call<br>the<br>helpline</h3> </li>      
+      </div>
+</ol>
+</div>
+</div>
+</div>
+</center>
+
+<div>
+      <br><br><br>
+      <h2 class="topic">
+            In addition to this, follow following points to prevent the spread of COVID-19:
+      </h2>
+      <ul class="add">
+            <li>Clean your hands often. Use soap and water, or an alcohol-based hand rub.</li>
+            <li>Maintain a safe distance from anyone who is coughing or sneezing.</li>
+            <li>Don’t touch your eyes, nose or mouth.</li>
+            <li>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</li>
+            <li>Stay home if you feel unwell.</li>
+            <li>If you have a fever, a cough, and difficulty breathing, seek medical attention.</li>
+            <li>Follow the directions of your local health authority.</li>
+            <li>Avoiding uneeded visits to medical facilities.</li>
+            <li>Follow the Government's advices.</li>
+            <li>Avoid going out of home. If it's urgent, wear mask and follow social distancing.</li>
+            <li>Co-operate with Government bodies.</li>
+      </ul>
+</div>
+
+<center><h1 class="quote"><b>Let's Fight together against COVID-19 and make Humanity WIN</b></h1></center>
+
+<style>
+.card{
+background-color: #91a2b8;
+padding: 6%;
+border:1px 1px 3px #4e60a5;
+box-shadow:1px 2px 7px#000307;
+width: 80%;
+margin: 10px;
+}
+
+.topic{
+      text-align: center;
+}
+
+.add{
+      margin-left: 20px;
+      width: 80%;
+}
+
+.card:hover{
+ transform:translateY(-10%);
+ transition:0.3s linear ;
+}
+
+.quote{
+      background-color: rgb(79, 171, 194);
+      color: aliceblue;
+      
+}
+
+</style>
+
+
+{% endblock content %}
